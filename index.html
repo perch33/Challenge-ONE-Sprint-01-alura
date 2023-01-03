@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Encriptador de texto</title>
+  </head>
+  <body>
+    <div class="contente__alura">
+      <img
+        src="/assets/img/logo__alura.svg"
+        alt="imagen de logo de Alura"
+        class="logo__Alura"
+      />
+    </div>
+    <!-- principal -->
+    <div class="container">
+      <textarea
+        name="textEncriptar"
+        id="areaEncriptar"
+        class="areaEncriptar"
+        placeholder="Ingrese el texto aquí"
+      ></textarea>
+      <div class="alerta__text">
+        <img
+          src="/assets/img/alert.svg"
+          alt="imagen de alerta"
+          class="img__alert"
+        />
+        <p class="texto">Solo letras minúsculas y sin acentos</p>
+      </div>
+      <div class="botones">
+        <button class="botonStyle btn__encriptar">Encriptar</button>
+        <button class="botonStyle btn__desencriptar">Desencriptar</button>
+      </div>
+    </div>
+
+    <!-- aside -->
+    <aside class="cuadro__aside">
+      <textarea name="texto encriptado"class="areaEncriptar tex_encriptado texto ocultar"></textarea>
+      <img
+        src="/assets/img/Muñeco.svg"
+        alt="imagen de Muñeco"
+        class="img__munieco elements"
+      />
+      <p class="texto text__bold text__1 elements">Ningún mensaje fue encontrado</p>
+      <p class="texto text__1 elements">
+        Ingresa el texto que desees encriptar o desencriptar.
+      </p>
+        <p class="txtcopiado ocultar">copiado</p>
+        <button class="botonStyle btn__desencriptar boton__aside ocultar">Copiar</button>
+    </aside>
+
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

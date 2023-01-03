@@ -1,0 +1,256 @@
+:root {
+    --colorAlura: #0a3871;
+    --colorTextAlura: #495057;
+    --textSerif: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #E5E5E5;
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+}
+
+/* logo Alura */
+.logo__Alura {
+    width: 25px;
+    display: block;
+    margin: 15% auto;
+}
+
+/* main */
+.container {
+    margin-top: 90px;
+}
+
+.areaEncriptar {
+    color: var(--colorAlura);
+    background: none;
+    border: 0;
+    resize: none;
+    font-family: var(--textSerif);
+    font-size: 25px;
+    width: 90%;
+    height: 65%;
+
+}
+
+.areaEncriptar::placeholder {
+    color: var(--colorAlura);
+}
+
+.areaEncriptar:focus {
+    outline: 0;
+}
+
+
+/* texto */
+.alerta__text {
+    display: flex;
+}
+
+.img__alert {
+    display: block;
+    padding: 1%;
+}
+
+.texto {
+    display: inline-block;
+    color: var(--colorTextAlura);
+    font-family: var(--textSerif);
+}
+
+.text__bold {
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.text__center {
+    text-align: center;
+}
+
+.tex_encriptado {
+    margin: 0 auto;
+    line-height: 30px;
+    height: 70%;
+    width: 90%;
+}
+
+/* botones */
+
+.botones {
+    width: 90%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botonStyle {
+    width: 47%;
+    cursor: pointer;
+    font-family: var(--textSerif);
+    padding: 15px 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.btn__encriptar {
+    color: #fff;
+    background-color: var(--colorAlura);
+    border: none;
+}
+
+.btn__desencriptar {
+    color: var(--colorAlura);
+    border-color: var(--colorAlura);
+    background-color: transparent;
+
+}
+
+.boton__aside {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #fff;
+    padding: 15px 10px;
+}
+
+
+
+/* aside */
+.cuadro__aside {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 1px 1px 30px 1px rgb(215, 208, 208);
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+    padding: 15px;
+    margin: 7% 9% 0;
+    height: 85vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.txtcopiado {
+    position: absolute;
+    bottom: 120px;
+    left: 37%;
+    background-color: var(--colorAlura);
+    padding: 5px;
+    width: 70px;
+    font-size: 15px;
+    color: #fff;
+    font-family: var(--textSerif);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+/* medida para tablet */
+@media screen and (max-width: 1024px) {
+    body {
+        display: block;
+        padding: 3%;
+    }
+
+    /* logos alura */
+    .logo__Alura {
+        width: 35px;
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 70px;
+        margin: 1px auto;
+    }
+
+    .contente__alura {
+        position: relative;
+        height: 50px;
+    }
+
+    /* campo de textarea */
+    .container {
+        margin-top: 190px;
+    }
+
+    .areaEncriptar {
+        font-size: 40px;
+        width: 100%;
+        height: 40vh;
+
+    }
+
+    .botonStyle{
+        font-size: 25px;
+    }
+    .botones {
+        width: 100%;
+
+    }
+    /* campo texto aside */
+    .tex_encriptado{
+        font-size: 35px;
+    }
+    .text__1{
+        font-size: 25px;
+    }
+
+    /* munieco aside */
+    .img__munieco {
+        display: none;
+    }
+
+    .cuadro__aside {
+        margin: 3% 1% ;
+        height: auto;
+
+    }
+    .tex_encriptado {
+        height: 30vh;
+        width: 100%;
+    }
+
+}
+
+/* medida para celular */
+@media screen and (max-width: 601px) {
+    .botones{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .botonStyle{
+        width: 90%;
+        margin: 10px 0px;
+        font-size: 30px;
+        padding: 25px 10px;
+    }
+
+}
+
+
+
+
+
+
+.mostrar {
+    display: block;
+
+}
+
+.ocultar {
+    display: none;
+}
