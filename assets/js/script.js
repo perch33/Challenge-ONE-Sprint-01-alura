@@ -10,14 +10,12 @@ const txtcopiado = document.querySelector(".txtcopiado");
 
 let textEncriptado = document.querySelector(".tex_encriptado");
 
-
 // ocultamos los elementos no deseados del aside
 const ocultarElementos = () => {
   elements.forEach((elemento) => elemento.classList.add("ocultar"));
   btnCopiar.classList.remove("ocultar");
   textEncriptado.classList.remove("ocultar");
 };
-
 
 // código para encriptar
 const encriptar = () => {
@@ -29,8 +27,8 @@ const encriptar = () => {
     .replaceAll(/a/gi, "ai")
     .replaceAll(/u/gi, "ufat");
   textEncriptado.value = texto;
+  areaEncriptar.value = "";
 };
-
 
 // código para desencriptar
 const desenCriptar = () => {
@@ -42,8 +40,8 @@ const desenCriptar = () => {
     .replaceAll(/ai/gi, "a")
     .replaceAll(/ufat/gi, "u");
   textEncriptado.value = texto;
+  areaEncriptar.value = "";
 };
-
 
 //comprobamos los campos vacíos, de ser true recargamos la pagina automáticamente
 const comprobarVacios = () => {
@@ -53,7 +51,6 @@ const comprobarVacios = () => {
   }
 };
 
-
 // detectamos si tiene activado el Bloq Mayus para las letras mayúsculas
 areaEncriptar.addEventListener("keyup", (event) => {
   if (event.getModifierState("CapsLock")) {
@@ -61,7 +58,6 @@ areaEncriptar.addEventListener("keyup", (event) => {
     location.reload();
   }
 });
-
 
 // encriptamos el texto
 btnEncriptar.addEventListener("click", () => {
@@ -77,10 +73,8 @@ btnDesencriptar.addEventListener("click", () => {
   desenCriptar();
 });
 
-
 // boton de copiar
 btnCopiar.addEventListener("click", () => {
-
   // accedemos a los valores
   textEncriptado.select();
   textEncriptado.setSelectionRange(0, 99999);
