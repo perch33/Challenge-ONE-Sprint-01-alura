@@ -45,7 +45,7 @@ const desenCriptar = () => {
 
 //comprobamos los campos vacíos, de ser true recargamos la pagina automáticamente
 const comprobarVacios = () => {
-  if (areaEncriptar.value == "") {
+  if (areaEncriptar.value.trim() == "") {
     alert("ingresa una palabra");
     location.reload();
   }
